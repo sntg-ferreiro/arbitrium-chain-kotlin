@@ -18,7 +18,7 @@ class BlockchainTestController(val bc: BlockChain = BlockChain()) {
         return get1()
     }
 
-    @PostMapping("/validar")
+    @PostMapping("/reemplazar")
     fun post2(@RequestBody i: MutableList<Bloque>): MutableList<Bloque> {
         bc.reemplazarCadena(i)
         return get1()
