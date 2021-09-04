@@ -8,7 +8,7 @@ import kotlin.collections.ArrayList
 /**
  * representacion del bloque que formara la cadena.
  * nonce: campo que cambia cada vez que se intenta minar un bloque.
- *  es parte fundamental de como funciona HashChas
+ *  es parte fundamental de como funciona HashCash
  * Dificultad: cantidad de 0's con los que tenia que empezar el hash cuando se mino el bloque.
  *  la idea de hacerla dinamica es que se pueda ajustar el ritmo al que se minan bloques
  *      -> se mantengan 'alrededor' de N milis
@@ -27,7 +27,7 @@ data class Bloque(
         val logger = Logger.getLogger(this::class.java.simpleName)
 
         fun genesis(): Bloque{
-            return Bloque(Instant.EPOCH.epochSecond,
+            return Bloque(0,//System.currentTimeMillis(),
                 "----------------",
                 "4rb1tr1vm-ch41nz",
                 0, 4, ArrayList())
@@ -40,9 +40,6 @@ data class Bloque(
             return "$hashAnterior$instante$transacciones$nonce".hash(Algorithm.SHA256);
         }
 
-        /**
-         * Que fantastico es KOTLIN VIEJA x2
-         */
         fun hash(b:Bloque):String {
             val anterior = b.hashAnterior
             val instanteActual = b.instante
@@ -60,11 +57,11 @@ data class Bloque(
             var nonce = 0
             do{
                 nonce++
-                instante = Instant.EPOCH.epochSecond
+                instante = System.currentTimeMillis()
                 dificultad = ajustarDif(instanteAnterior, instante, dificultad)
                 hash = hash(hashAnterior, instante, txs, nonce)
             }while (hash.subSequence(0,dificultad) != "0".repeat(dificultad))
-            logger.info("Nonce: $nonce - Diff: $dificultad - Hash: $hash")
+            logger.info("[NUEVO BLOQUE MINADO] -> Nonce: $nonce - Diff: $dificultad - Hash: $hash")
             return Bloque(instante, hashAnterior, hash, nonce, dificultad, txs)
         }
 

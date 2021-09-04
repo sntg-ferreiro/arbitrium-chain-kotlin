@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a720927e-09f6-4bb2-9add-d4e02edd4682" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/controller/BlockchainTestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/controller/BlockchainTestController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Transaccion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Transaccion.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/utils/HashUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/utils/HashUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,26 +129,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
+          <line>23</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
-          <line>15</line>
-          <option name="timeStamp" value="7" />
+          <line>44</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt</url>
-          <line>50</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt</url>
-          <line>79</line>
-          <properties class="ar.com.arbitrium.chain.model.Bloque" method="equalsGenesis">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
+          <line>20</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

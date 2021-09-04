@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.*
 class BlockchainTestController(val bc: BlockChain = BlockChain()) {
 
     @GetMapping
-    fun get1(): BlockChain = bc
+    fun get1(): MutableList<Bloque> = bc.cadena
 
     @PostMapping
-    fun post1(@RequestBody t: MutableList<Transaccion>): BlockChain {
+    fun post1(@RequestBody t: MutableList<Transaccion>): MutableList<Bloque> {
         bc.agregarBloque(t)
         return get1()
     }
 
     @PostMapping("/validar")
-    fun post2(@RequestBody i: MutableList<Bloque>): BlockChain {
+    fun post2(@RequestBody i: MutableList<Bloque>): MutableList<Bloque> {
         bc.reemplazarCadena(i)
         return get1()
     }
