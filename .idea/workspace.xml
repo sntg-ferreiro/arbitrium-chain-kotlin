@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a720927e-09f6-4bb2-9add-d4e02edd4682" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/controller/BlockchainTestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/controller/BlockchainTestController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Bloque.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Transaccion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/Transaccion.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chain/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,27 +118,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
-          <line>23</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
-          <line>44</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/chain/src/main/kotlin/ar/com/arbitrium/chain/model/BlockChain.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

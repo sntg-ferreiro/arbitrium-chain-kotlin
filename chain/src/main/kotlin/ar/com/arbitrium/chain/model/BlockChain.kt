@@ -41,7 +41,7 @@ data class BlockChain(var cadena: MutableList<Bloque> = mutableListOf(Bloque.gen
      */
     fun reemplazarCadena(cadenaNueva: MutableList<Bloque>): MutableList<Bloque> {
         logger.info("Estas a Punto de reemplazar la cadena existente!")
-        if(cadenaNueva.size < this.cadena.size) return this.cadena
+        if(cadenaNueva.size <= this.cadena.size) return this.cadena
         else if(!validarCadena(cadenaNueva)) return this.cadena
         logger.info("La nueva cadena reemplazo la existente!")
         this.cadena = cadenaNueva

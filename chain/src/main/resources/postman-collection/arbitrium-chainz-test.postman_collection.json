@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "03c4b94b-75ee-466c-a685-f957aec0773a",
+		"name": "arbitrium-chainz-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reemplazar cadena",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"instante\": 0,\r\n        \"hashAnterior\": \"----------------\",\r\n        \"hash\": \"4rb1tr1vm-ch41nz\",\r\n        \"nonce\": 0,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": []\r\n    },\r\n    {\r\n        \"instante\": 1630773522266,\r\n        \"hashAnterior\": \"4rb1tr1vm-ch41nz\",\r\n        \"hash\": \"0000d9ff9ab8c4ea1d08cb1df79429bc11434540ee2d0f4c5a0a1b967e3c35f7\",\r\n        \"nonce\": 213225,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"bd61d106-c140-4609-9fdc-471abdc2756c\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"d19f8ceb-ba48-442f-9c79-258d3d89e758\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"67c0ec18-2809-46e2-9fb2-c5a10b7c4d40\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773526782,\r\n        \"hashAnterior\": \"0000d9ff9ab8c4ea1d08cb1df79429bc11434540ee2d0f4c5a0a1b967e3c35f7\",\r\n        \"hash\": \"0000f9dd0d320e60360782f9ec4a981d6134bde407878b2f7360b84f82b1ee85\",\r\n        \"nonce\": 81748,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"c5528093-e02c-4ab9-b9dc-a3431ad365f9\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"aa832fa3-f7f6-4007-a29d-7a5fb3044eac\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"9f3f2c8e-b760-47cb-8431-4ad3b52b76aa\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773528197,\r\n        \"hashAnterior\": \"0000f9dd0d320e60360782f9ec4a981d6134bde407878b2f7360b84f82b1ee85\",\r\n        \"hash\": \"00002d9b29b062c59432beba64803914e36f84d1c59a34bfde9db8782873a396\",\r\n        \"nonce\": 7468,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"4e8f8ffe-f446-474e-8111-c3f55a9d42c2\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"17f6623f-d093-4c53-8d63-4dd7a9861784\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"11a1f1e7-f610-48f4-b730-9b5304cfeb63\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773529998,\r\n        \"hashAnterior\": \"00002d9b29b062c59432beba64803914e36f84d1c59a34bfde9db8782873a396\",\r\n        \"hash\": \"0000cf1f53dbf02c4f7c5c3d6eaefaecb122733ec60b778a342ecfe6eb067e26\",\r\n        \"nonce\": 100631,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"4e42fb50-8fcf-4934-b3ac-885561137a98\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"ab608c09-7827-46ef-a0dd-2695bcc28f4f\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"971a8a67-12ae-469a-99cd-20e618322b9a\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773530777,\r\n        \"hashAnterior\": \"0000cf1f53dbf02c4f7c5c3d6eaefaecb122733ec60b778a342ecfe6eb067e26\",\r\n        \"hash\": \"0000a14bf84063d1fc84b001310ea09d049495adf435fbf311de3ebe9727f589\",\r\n        \"nonce\": 8609,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"588a0aa8-fa63-4857-864a-bd6540320ec0\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"e52131b2-d02a-4228-98f1-90ef72d1c22c\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"5c4fe763-b68d-4ce9-841b-1cb0b930e6fb\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773546804,\r\n        \"hashAnterior\": \"0000a14bf84063d1fc84b001310ea09d049495adf435fbf311de3ebe9727f589\",\r\n        \"hash\": \"0000cd9b75296a09cfbe6fb8f2cd1772a580ef355fc6772edc28a0bd6b3633a7\",\r\n        \"nonce\": 49492,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"d3315182-83ee-43c9-acea-cadc2b8eae96\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"14d05a6d-bdfc-487c-845b-f48f9f3bb341\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"a1ad195a-0810-4241-b846-dbb0ab4ab1bf\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"instante\": 1630773547887,\r\n        \"hashAnterior\": \"0000cd9b75296a09cfbe6fb8f2cd1772a580ef355fc6772edc28a0bd6b3633a7\",\r\n        \"hash\": \"0000084c1d53e918242d320265ecb04873bb53bd6947cb4c0aa8b3e79175d2a0\",\r\n        \"nonce\": 54778,\r\n        \"dificultad\": 4,\r\n        \"transacciones\": [\r\n            {\r\n                \"id\": \"4acc597c-c84c-4385-bfed-ff9e23821cb1\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"cdeba7d9-b2c1-42e2-a04c-e593f907ddea\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 1,\r\n                    \"idMiembro\": 4\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": \"55747b42-b6f6-4434-b741-dd3709e3b4e6\",\r\n                \"entrada\": {\r\n                    \"idOrg\": 5,\r\n                    \"idMiembro\": 3\r\n                },\r\n                \"salidas\": [\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    },\r\n                    {\r\n                        \"idVotacion\": 3,\r\n                        \"idOpcion\": 4\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8080}}bc/reemplazar",
+					"host": [
+						"{{8080}}bc"
+					],
+					"path": [
+						"reemplazar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Bloque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"entrada\":{\r\n            \"idOrg\":\"1\",\r\n            \"idMiembro\":\"3\"\r\n        },\r\n        \"salidas\":[\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            },\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            }\r\n        ]\r\n    \r\n    },\r\n    {\r\n        \"entrada\":{\r\n            \"idOrg\":\"1\",\r\n            \"idMiembro\":\"4\"\r\n        },\r\n        \"salidas\":[\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            },\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            }\r\n        ]\r\n    \r\n    },\r\n    {\r\n        \"entrada\":{\r\n            \"idOrg\":\"5\",\r\n            \"idMiembro\":\"3\"\r\n        },\r\n        \"salidas\":[\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            },\r\n            {\r\n                \"idVotacion\":\"3\",\r\n                \"idOpcion\":\"4\"\r\n            }\r\n        ]\r\n    \r\n    }\r\n    \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{8080}}bc",
+					"host": [
+						"{{8080}}bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar Cadena",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{8080}}bc",
+					"host": [
+						"{{8080}}bc"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{8080}}",
+			"value": "http://localhost:8080/"
+		}
+	]
+}
