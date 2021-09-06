@@ -1,6 +1,8 @@
 package ar.com.arbitrium.chain.model
 
 import ar.com.arbitrium.chain.utils.*
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
 import java.time.Instant
 import java.util.logging.Logger
 import kotlin.collections.ArrayList
@@ -22,10 +24,10 @@ data class Bloque(
     val dificultad: Int,
     val transacciones: MutableList<Transaccion>
 ) {
+    private val logger = LogFactory.getLog(javaClass)
     companion object{
-        private val INTERVALO_MINERO: Long = 0
-        val logger = Logger.getLogger(this::class.java.simpleName)
-
+        private val logger: Log = LogFactory.getLog(this::class.java)
+        private const val INTERVALO_MINERO: Long = 0
         fun genesis(): Bloque{
             return Bloque(0,//System.currentTimeMillis(),
                 "----------------",

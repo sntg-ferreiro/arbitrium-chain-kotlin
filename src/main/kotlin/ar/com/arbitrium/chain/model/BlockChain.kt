@@ -1,5 +1,7 @@
 package ar.com.arbitrium.chain.model
 
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
 import java.util.logging.Logger
 import kotlin.math.log
 
@@ -9,8 +11,9 @@ import kotlin.math.log
  * @author Z.F.
  */
 data class BlockChain(var cadena: MutableList<Bloque> = mutableListOf(Bloque.genesis())) {
+    private val logger: Log = LogFactory.getLog(javaClass)
     companion object{
-        val logger = Logger.getLogger(this::class.java.simpleName)
+        private val logger: Log = LogFactory.getLog(this::class.java)
         /**
          *  validar cadena si:
          *    |-> Comienza con el mismo genesis
