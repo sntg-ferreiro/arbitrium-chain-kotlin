@@ -2,8 +2,6 @@ package ar.com.arbitrium.chain.model
 
 import org.apache.commons.logging.Log
 import org.apache.commons.logging.LogFactory
-import java.util.logging.Logger
-import kotlin.math.log
 
 /**
  * Clase que contiene la cadena en si, con los metodos necesarios para ser utilizada.

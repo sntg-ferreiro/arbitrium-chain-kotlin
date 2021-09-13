@@ -20,13 +20,16 @@ data class Transaccion(
  */
 data class Entrada(var idOrg: Long,
                    var idMiembro: Long,){
+    fun compare(input: Entrada): Boolean{
+        return input.idMiembro == this.idMiembro && input.idOrg == this.idOrg
+    }
 
 }
 
 /**
  * identifica 1 opcion elegida de cada decision abierta.
  */
-data class Salida(var idVotacion: Long,
+data class Salida(var idDecision: Long,
                   var idOpcion: Long){
 
 }
