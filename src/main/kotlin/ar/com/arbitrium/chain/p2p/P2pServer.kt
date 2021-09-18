@@ -51,9 +51,12 @@ class P2pServer(@Autowired var restTemplate: RestTemplate, @Value("#{'\${p2p.par
 
     private fun enviarCadena(p: String) {
         logger.info("Mandando cadena a: $p")
-        val response: ResponseEntity<BlockChain> = restTemplate.postForEntity("$p/p2p/cadena", this.bc)
-        if (response.statusCode.is2xxSuccessful) response.body?.let { bc.reemplazarCadena(it.cadena) }
-        else logger.error("Error al enviar la cadena! Error: ${response.body} - HttpStatus: ${response.statusCode}")
+        try{
+            val response: ResponseEntity<BlockChain> = restTemplate.postForEntity("$p/p2p/cadena", this.bc)
+            response.body?.let { bc.reemplazarCadena(it.cadena) }
+        }catch (e: Exception){
+            logger.error("Error al enviar la cadena! Error: ${e.localizedMessage}")
+        }
     }
 
     @GetMapping
@@ -85,17 +88,17 @@ class P2pServer(@Autowired var restTemplate: RestTemplate, @Value("#{'\${p2p.par
     }
 
     fun obtenerResultados(org: Long, dec: Long): MutableList<Salida> {
-        var o: MutableList<Salida> = mutableListOf()
+        return obtenerTodasLasSalidasDeOrg(org).filter { it.idDecision == dec } as MutableList<Salida>
+    }
 
-        //Obtener salidas relevantes
-        for (b in this.bc.cadena){
+    fun obtenerTodasLasSalidasDeOrg(org: Long): MutableList<Salida>{
+        val o: MutableList<Salida> = mutableListOf()
+        for(b in this.bc.cadena){
             for (t in b.transacciones){
-                if(t.entrada.idOrg == org)
-                    o = t.salidas.filter { it.idDecision == dec } as MutableList<Salida>
+                if (t.entrada.idOrg == org) o.addAll(t.salidas)
             }
         }
-
-        return o;
+        return o
     }
 
 }
