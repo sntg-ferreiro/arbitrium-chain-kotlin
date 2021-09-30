@@ -1,5 +1,6 @@
 package ar.com.arbitrium.chain.model
 
+import java.math.BigInteger
 import java.util.*
 
 /**
@@ -19,7 +20,7 @@ data class Transaccion(
  * identifica a 1 miembro de 1 org
  */
 data class Entrada(var idOrg: Long,
-                   var idMiembro: Long,){
+                   var idMiembro: BigInteger){
     fun compare(input: Entrada): Boolean{
         return input.idMiembro == this.idMiembro && input.idOrg == this.idOrg
     }
