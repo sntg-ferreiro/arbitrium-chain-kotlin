@@ -2,16 +2,20 @@ package ar.com.arbitrium.chain.model
 
 import org.apache.commons.logging.Log
 import org.apache.commons.logging.LogFactory
+import org.springframework.beans.factory.annotation.Value
 
 /**
  * Clase que contiene la cadena en si, con los metodos necesarios para ser utilizada.
  *
  * @author Z.F.
  */
-data class BlockChain(var cadena: MutableList<Bloque> = mutableListOf(Bloque.genesis())) {
+data class BlockChain(var diff: Int, var cadena: MutableList<Bloque> = mutableListOf(Bloque.genesis())) {
     private val logger: Log = LogFactory.getLog(javaClass)
+
     companion object{
         private val logger: Log = LogFactory.getLog(this::class.java)
+
+
         /**
          *  validar cadena si:
          *    |-> Comienza con el mismo genesis
@@ -31,7 +35,7 @@ data class BlockChain(var cadena: MutableList<Bloque> = mutableListOf(Bloque.gen
     }
 
     fun agregarBloque(tx: MutableList<Transaccion>): Boolean {
-        val bloque = Bloque.minar(cadena[cadena.size-1],tx)
+        val bloque = Bloque.minar(cadena[cadena.size-1],tx,diff)
         this.cadena.add(bloque)
         return true
     }

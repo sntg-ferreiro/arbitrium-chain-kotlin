@@ -17,9 +17,9 @@ import java.util.*
 
 @RestController
 @RequestMapping("/p2p")
-class P2pServer(@Autowired var restTemplate: RestTemplate, @Value("#{'\${p2p.pares}'.split(',')}") val pares: MutableList<String>) {
+class P2pServer(@Value("\${dificultad}") private var diff:String, @Autowired var restTemplate: RestTemplate, @Value("#{'\${p2p.pares}'.split(',')}") val pares: MutableList<String>) {
     //, @Autowired val props: ConfigProperties
-    var bc: BlockChain = BlockChain()
+    var bc: BlockChain = BlockChain(diff.toInt())
 
     private val logger = LogFactory.getLog(javaClass)
 

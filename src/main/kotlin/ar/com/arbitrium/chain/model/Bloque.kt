@@ -26,6 +26,7 @@ data class Bloque(
 ) {
     private val logger = LogFactory.getLog(javaClass)
     companion object{
+
         private val logger: Log = LogFactory.getLog(this::class.java)
         private const val INTERVALO_MINERO: Long = 0
         fun genesis(): Bloque{
@@ -50,10 +51,10 @@ data class Bloque(
             return hash(anterior, instanteActual, transaccionesActuales, nonce2)
         }
 
-        fun minar(bloqueViejo: Bloque, txs: MutableList<Transaccion>): Bloque {
+        fun minar(bloqueViejo: Bloque, txs: MutableList<Transaccion>, diff: Int?=null): Bloque {
             val hashAnterior: String = bloqueViejo.hash
             val instanteAnterior: Long = bloqueViejo.instante
-            var dificultad: Int = bloqueViejo.dificultad
+            var dificultad: Int = diff ?: bloqueViejo.dificultad
             var hash: String = ""
             var instante: Long = 0
             var nonce = 0
