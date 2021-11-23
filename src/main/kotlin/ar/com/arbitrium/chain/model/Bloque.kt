@@ -1,11 +1,9 @@
 package ar.com.arbitrium.chain.model
 
-import ar.com.arbitrium.chain.utils.*
+import ar.com.arbitrium.chain.utils.Algorithm
+import ar.com.arbitrium.chain.utils.hash
 import org.apache.commons.logging.Log
 import org.apache.commons.logging.LogFactory
-import java.time.Instant
-import java.util.logging.Logger
-import kotlin.collections.ArrayList
 
 /**
  * representacion del bloque que formara la cadena.
@@ -69,10 +67,13 @@ data class Bloque(
         }
 
 
-
+        /**
+         * /*(instanteAnterior + INTERVALO_MINERO < instante) difAnterior //+ 1
+        else difAnterior //-1*/
+         */
         fun ajustarDif(instanteAnterior: Long,instante: Long, difAnterior: Int): Int{
-            return if(instanteAnterior + INTERVALO_MINERO < instante) difAnterior //+ 1
-                    else difAnterior //-1
+            return difAnterior
+
         }
 
     }

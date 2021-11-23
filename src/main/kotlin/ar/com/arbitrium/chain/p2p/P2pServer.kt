@@ -9,9 +9,7 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.client.RestTemplate
-import org.springframework.web.client.getForEntity
 import org.springframework.web.client.postForEntity
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder
 import java.util.*
 
 
@@ -22,23 +20,6 @@ class P2pServer(@Value("\${dificultad}") private var diff:String, @Autowired var
     var bc: BlockChain = BlockChain(diff.toInt())
 
     private val logger = LogFactory.getLog(javaClass)
-
-    /**
-     * esta deberia ir a buscar peers al discovery server, e intentar conectar.
-     * deberia arrancar cuando el micro esta running.
-     * lo primero que hay que hacer una vez estan conectados es intercambiar BC's
-     * *
-     */
-    private fun searchPeersAndConnect(): Unit {
-        logger.info("TODO! A COMPLETAR! - BUSCAR PARES Y CONECTAR")
-        /**
-         * cuando encuentro un par, le mando mi cadena?
-         */
-        logger.info("Buscando pares... ")
-        this.pares.forEach { restTemplate.getForEntity<Unit>("$it/actuator/health") }
-
-    }
-
 
     /**
      * Esto deberia suceder cada vez que un nuevo bloque es minado, o algun otro cambio surge en la cadena

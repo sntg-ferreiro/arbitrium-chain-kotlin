@@ -1,3 +1,4 @@
+/*
 package ar.com.arbitrium.chain
 
 import org.junit.jupiter.api.Test
@@ -11,3 +12,4 @@ class ChainApplicationTests {
 	}
 
 }
+*/
